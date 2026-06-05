@@ -1,0 +1,231 @@
+:root {
+    --background: #FFFDF1;
+    --color1: #1D2A10; 
+    --color2: #8DA432; 
+    --color3: #FFFFFF; 
+    --color4: #D9C8AB;
+    --color5: #351903;
+    
+}
+@font-face {
+    font-family: 'Albert';
+    src: url('../fonts/AlbertSans-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DMSerif';
+    src: url('../fonts/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Libre';
+    src: url('../fonts/LibreBaskerville-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Special';
+    src: url('../fonts/SpecialElite-Regular.ttf') format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2%;
+    padding-right: 3%;
+   
+}
+.logo{
+    padding-top: 2%;
+    padding-left: 7%;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+header nav a{
+    font-family: Albert; 
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--color3);
+    -webkit-text-stroke: 0.36px var(--color3);
+}
+.mudaCor{
+    padding-top: 2%;
+}
+
+.imgPrincipal {
+    position: relative;
+    min-height: 100vh;
+    background-image: url("../assets/ImageMain.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 15% 8% ;
+}
+
+.textPrincipal {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    font-family: DMSerif;
+}
+
+.imgPrincipal h1 {
+    font-size: 80px;
+    line-height: 1.1;
+    color: var(--color3);
+}
+
+.imgPrincipal h1 span {
+    color: var(--color2);
+}
+
+.imgPrincipal p {
+    margin-top: 2rem;
+    max-width: 400px;
+    color: var(--color3);
+    font-size: 25px;
+    font-family: Albert;
+    -webkit-text-stroke: 0.5px var(--color3);
+}
+/* menu */
+.menu{
+    align-items: center;
+   
+}
+.menu h2{
+    padding-top: 4%;
+    color: var(--color1);
+    font-family: Libre;
+    -webkit-text-stroke: 1px var(--color1);
+    text-align: center;
+    font-size: 40px;
+
+}
+.menu p{
+    color: var(--color5);
+    padding-top: 1%;
+    font-family: Albert;
+    -webkit-text-stroke: 0.6px var(--color5);
+    text-align: center;
+    font-size: 25px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/* Carrosel */
+
+.carousel-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    padding-bottom:100px;
+}
+
+.carousel-wrapper{
+    width:1090px;
+    overflow:hidden;
+}
+
+.carousel{
+    display:flex;
+    gap:20px;
+    width:max-content;
+    height: 430px;
+    align-items: center;
+    overflow:visible;
+
+    transition: transform 0.5s ease;
+}
+.arrow{
+    all: unset;
+    cursor: pointer;
+}
+.carousel::-webkit-scrollbar{
+    display:none;
+}
+
+.folder{
+    position:relative;
+    width:350px;
+    height:230px;
+    flex-shrink:0;
+    overflow:visible;
+}
+
+.pasta,
+.aberta{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pasta{
+    opacity: 1;
+    z-index: 1;
+}
+
+.aberta{
+    opacity:0;
+    z-index:2;
+
+    width:125%;
+    height:auto;
+
+    left:-12%;
+    top:-18%;
+
+    transform:scale(0.95);
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease;
+}
+
+/* Hover */
+.folder:hover .pasta{
+    opacity: 0;
+}
+
+.folder:hover .aberta{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.folder:hover .conteudo{
+    display: none;
+}
+.conteudo{
+    position: relative;
+    z-index: 3;
+    padding-top: 15%;
+    padding-left: 15%;
+}
+.conteudo h3{
+    font-family: Albert;
+    font-size: 35px;
+    color: var(--color1);
+}
+.label{
+    font-family: Albert;
+    font-size: 20px;
+    text-align: start;
+    color: var(--color1);
+    padding-top: 2%;
+    max-width: 250px;
+}
