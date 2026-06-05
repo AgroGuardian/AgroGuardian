@@ -274,3 +274,50 @@ header nav a{
     width: 500px;
     flex-shrink: 0;
 }
+/* Seção Tecnologia */
+
+.conteudo-secao2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 7%;
+    background-color: var(--background);
+    margin-top: -50px; 
+    position: relative;
+    z-index: 10;
+    border-radius: 40px 40px 0 0;
+   
+}
+
+.texto-secao2{
+    flex: 1;
+    text-align: end;
+}
+.texto-secao2 h2{
+    font-family: Libre;
+    color: var(--color1);
+    font-size: 60px;
+    -webkit-text-stroke: 1px var(--color1);
+    padding-bottom: 7%;
+    text-align: end;
+}
+.texto-secao2 h3{
+    font-family: Albert;
+    color: var(--color1);
+    font-size: 45px;
+    padding-bottom: 5%;
+    text-align: end;
+}
+.texto-secao2 p{
+    font-family: Albert;
+    color: var(--color1);
+    font-size: 25px;
+    padding-bottom: 3%;
+}
+.img-Secao2{
+    width: 500px;
+    flex-shrink: 0;
+}
+
+/* Seção Objetivos */
