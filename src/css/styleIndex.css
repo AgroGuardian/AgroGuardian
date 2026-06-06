@@ -321,3 +321,59 @@ header nav a{
 }
 
 /* Seção Objetivos */
+.conteudo-secao3 {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2 / 3; 
+    background-image: url("../assets/fundoPasta.png");
+    background-size: contain; 
+    background-position: top center; 
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    box-sizing: border-box;
+}
+.conteudo-secao3 h2{
+     font-family: Libre;
+    color: var(--color1);
+    font-size: 60px;
+    position: absolute;
+    top: 1%;
+    padding-left: 7%;
+    flex-wrap: nowrap;
+}
+.papelSecao3{
+    padding-bottom: 63%;
+    padding-left: 5%;
+    width: 650px;
+}
+.texto-secao3{
+    flex: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 23%;
+    padding-left: 13%;
+    padding-right: 45%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.texto-secao3 h3{
+    font-family:'Special';
+    color: black;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    font-size: 23px;
+   
+}
+.texto-secao3 p{
+    font-family:'Special';
+     color: black;
+     padding-bottom: 2%;
+   font-size: 22px;
+}
