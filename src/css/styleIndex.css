@@ -334,7 +334,7 @@ header nav a{
     flex-direction: row;
     align-items: center;          
     justify-content: space-between;
-    padding: 140px 8% 60px 8%; 
+    padding: 140px 8% 100px 8%; 
 
 }
 
@@ -417,4 +417,49 @@ header nav a{
     z-index: 2;         
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+/* Seção Público-alvo */
+
+.conteudo-secao4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 7%;
+    background-color: var(--color1);
+    margin-top: -50px; 
+    position: relative;
+    z-index: 10;
+    border-radius: 40px 40px 0 0;
+   
+}
+
+.texto-secao4{
+    flex: 1;
+    text-align: end;
+}
+.texto-secao4 h2{
+    font-family: Libre;
+    color: var(--color2);
+    font-size: 60px;
+    -webkit-text-stroke: 1px var(--color2);
+    padding-bottom: 8%;
+    text-align: end;
+}
+.texto-secao4 h3{
+    font-family: Albert;
+    color: var(--color3);
+    font-size: 45px;
+    padding-bottom: 5%;
+    text-align: end;
+}
+.texto-secao4 p{
+    font-family: Albert;
+    color: var(--color3);
+    font-size: 25px;
+    padding-bottom: 3%;
+}
+.img-Secao4{
+    width: 500px;
+    flex-shrink: 0;
 }
