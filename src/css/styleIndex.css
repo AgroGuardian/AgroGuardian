@@ -5,6 +5,7 @@
     --color3: #FFFFFF; 
     --color4: #D9C8AB;
     --color5: #351903;
+    --color6: #F1F1F1;
     
 }
 @font-face {
@@ -462,4 +463,79 @@ header nav a{
 .img-Secao4{
     width: 500px;
     flex-shrink: 0;
+}
+
+/* Seção Beneficios */
+
+.conteudo-secao5 {
+    width: 100%;
+    padding: 60px 8%;
+    background-color: var(--color3);
+    box-sizing: border-box;
+}
+
+.conteudo-secao5 h2 {
+    font-family: Libre;
+    color: var(--color1);     
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.container-cards-secao5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    gap: 20px;                      
+}
+
+.card {
+    flex: 1;               
+    height: 280px;           
+    border-radius: 20px;    
+    overflow: hidden;        
+    box-sizing: border-box;
+}
+
+.card card-img-secao5 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      
+}
+
+.cardTexto1-secao5, .cardTexto2-secao5 {
+    padding: 30px 25px;     
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cardTexto1-secao5 h3, .cardTexto2-secao5 h3 {
+    font-family: Albert;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+
+.cardTexto1-secao5 p, .cardTexto2-secao5 p {
+    font-family: Albert;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -1px; 
+    margin: 0;
+
+}
+
+.cardTexto1-secao5 {
+    background-color: var(--color6); 
+}
+.cardTexto1-secao5 h3, .cardTexto1-secao5 p {
+    color: black;          
+}
+
+/* Card Verde */
+.cardTexto2-secao5 {
+    background-color: var(--color2);
+}
+.cardTexto2-secao5 h3, .cardTexto2-secao5 p {
+    color: var(--color3);          
 }
