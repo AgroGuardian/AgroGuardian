@@ -19,7 +19,31 @@
     </nav>
 </header>
 
-
+<div class="container-formulario">
+    <div class="titulo"><h2>Fale Conosco</h2>
+        <p> Tem alguma dúvida sobre o sistema ou quer sugerir melhorias? 
+            Entre em contato direto com nosso time.</p>
+    </div>
+    <section class="contato">
+        <div class="formulario-wrapper">
+            <div class="formulario">
+               <form id="formulario" novalidate>
+                    Nome completo 
+                    <input type="text" id="nome" required>
+                    E-mail
+                    <input type="email" id="email" required>
+                    Sua Mensagem / Sugestão
+                    <textarea id="mensagem" required></textarea>
+    
+                    <div class="botoes-container">
+                        <button type="submit" id="botao">Enviar</button>
+                        <button type="reset" value="Limpar Formulário" id="reset">Limpar</button>
+                     </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
 
 
 <!-- Footer -->
@@ -28,7 +52,7 @@
     <div class="footer-topo">
         
         <div class="footer-logo">
-            <img src="./src/assets/Logo.png" alt="AgroGuardian Logo">
+            <img src="../assets/Logo.png" alt="AgroGuardian Logo">
     
         </div>
         
@@ -47,5 +71,7 @@
     </div>
 
 </footer>
+<div id="notificacao"></div>
+<script src="../js/scriptContato.js"></script>
 </body>
 </html>
