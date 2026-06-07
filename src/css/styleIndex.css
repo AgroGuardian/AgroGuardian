@@ -50,7 +50,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2%;
+    padding-top: 1%;
     padding-right: 3%;
    
 }
@@ -648,6 +648,7 @@ header nav a{
     font-size: 14px;
     margin: 0;
 }
+
 /* botao de voltar pro menu */
 .botao-subir {
     position: fixed;
