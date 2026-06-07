@@ -14,8 +14,22 @@
     <nav>
 
         <a href="../pages/quiz.html">AgroQuiz</a>
-        <a href="../pages/contato.html">Fale Conosco</a>
-        <img src="../assets/MudaCor.png" alt="icon troca de cor do site" width="60px" class="mudaCor">
+        <a href="../pages/contato.html"><span>Fale Conosco</span></a>
+        <div class="dropdown-cores">
+    <img src="../assets/MudaCor.png" alt="icon troca de cor do site" width="60px" class="mudaCor" id="btn-paleta">
+    
+    <div class="menu-cascata" id="menu-cores">
+        <button onclick="mudarTema('padrao')">
+            <span class="circulo-cor" style="background-color: #8DA432;"></span> Padrão (Verde)
+        </button>
+        <button onclick="mudarTema('outono')">
+            <span class="circulo-cor" style="background-color: #B33A0B;"></span> Outono (Terracota)
+        </button>
+        <button onclick="mudarTema('escuro')">
+            <span class="circulo-cor" style="background-color: #121212;"></span> Modo Escuro
+        </button>
+    </div>
+</div>
     </nav>
 </header>
 
@@ -72,6 +86,7 @@
 
 </footer>
 <div id="notificacao"></div>
+<script src="../js/scriptCores.js"></script>
 <script src="../js/scriptContato.js"></script>
 </body>
 </html>

@@ -74,6 +74,69 @@ header nav a{
     padding-top: 2%;
 }
 
+.dropdown-cores {
+    position: relative;
+    display: inline-block;
+}
+
+.mudaCor {
+    padding-top: 2%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.mudaCor:hover {
+    transform: scale(1.1); 
+}
+
+.menu-cascata {
+    display: none; 
+    position: absolute;
+    top: 100%;   
+    right: 0;
+    background-color: #FFFFFF;
+    border: 1.5px solid #1D2A10;
+    border-radius: 15px;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+    z-index: 10000;
+    padding: 8px 0;
+    margin-top: 10px;
+}
+
+.menu-cascata.mostrar {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-cascata button {
+    background: none;
+    border: none;
+    padding: 10px 16px;
+    width: 100%;
+    text-align: left;
+    font-family: 'Albert', sans-serif;
+    font-size: 16px;
+    color: #1D2A10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.2s;
+}
+
+.menu-cascata button:hover {
+    background-color: #F1F1F1; 
+}
+
+.circulo-cor {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.2);
+    display: inline-block;
+}
+
 .imgPrincipal {
     position: relative;
     min-height: 100vh;
@@ -242,9 +305,23 @@ header nav a{
     max-width: 250px;
 }
 /* menu */
-.faixaLogo{
-    display: block;
-    margin-bottom: 0;
+.faixa-simbolos {
+    width: 100%;
+    height: 100px;
+    background-color: var(--color2); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; 
+    overflow: hidden; 
+    padding: 0 10px;
+}
+
+/* Controla o tamanho de cada símbolo individual dentro da faixa */
+.faixa-simbolos img {
+    height: 70px; /* Deixa o símbolo centralizado com margem em cima e embaixo */
+    width: 60px;
+    object-fit: contain;
 }
 /* Seção Problema */
 .conteudo-secao1{
