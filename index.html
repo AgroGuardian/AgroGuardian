@@ -34,7 +34,7 @@
     </div>
 </section>
 <!-- Menu -->
-    <section class="menu">
+    <section id="menu" class="menu">
     <h2>Explore a nossa Solução</h2>
     <p>
         Navegue pelas seções abaixo e entenda como transformamos
@@ -46,14 +46,17 @@
         <div class="carousel-wrapper">
 
         <div class="carousel">
-            <div class="folder">
-                <img src="./src/assets/PastaFechada.png" alt="pasta fechada" class="pasta">
-                <img class="aberta" src="./src/assets/PastaAbertaProb.png">
-                <div class="conteudo">
-                <h3>Problema</h3>
-                <div class="label">O desafio que inspirou nossa solução.</div>
+            <a href="#secao-problema" class="link-pasta">
+                <div class="folder">
+                    <img src="./src/assets/PastaFechada.png" alt="pasta fechada" class="pasta">
+                    <img class="aberta" src="./src/assets/PastaAbertaProb.png">
+                    <div class="conteudo">
+                        <h3>Problema</h3>
+                    <div class="label">O desafio que inspirou nossa solução.</div>
+                    </div>
                 </div>
-            </div>
+            </a>
+            <a href="#secao-tech" class="link-pasta">
             <div class="folder">
                 <img src="./src/assets/PastaFechada.png" alt="pasta fechada" class="pasta">
                 <img class="aberta" src="./src/assets/PastaAbertaTec.png">
@@ -62,6 +65,8 @@
                 <div class="label">As ferramentas e tecnologias utilizadas no projeto.</div>
                 </div>
             </div>
+            </a>
+            <a href="#secao-ob" class="link-pasta">
             <div class="folder">
                 <img src="./src/assets/PastaFechada.png" alt="pasta fechada" class="pasta">
                 <img class="aberta" src="./src/assets/PastaAbertaObj.png">
@@ -70,6 +75,8 @@
                 <div class="label">O que pretendemos alcançar com esta proposta.</div>
                 </div>
             </div>
+            </a>
+            <a href="#secao-pub" class="link-pasta">
             <div class="folder">
                 <img src="./src/assets/PastaFechada.png" alt="pasta fechada" class="pasta">
                 <img class="aberta" src="./src/assets/PastaAbertaPub.png">
@@ -78,6 +85,8 @@
                 <div class="label">Quem será beneficiado pela solução desenvolvida.</div>
                 </div>
             </div>
+            </a>
+            <a href="#secao-bene" class="link-pasta">
             <div class="folder">
                 <img src="./src/assets/PastaFechada.png" alt="pasta fechada" class="pasta">
                 <img class="aberta" src="./src/assets/PastaAbertaBen.png">
@@ -86,6 +95,8 @@
                 <div class="label">As vantagens e impactos positivos do projeto.</div>
                 </div>
             </div>
+            </a>
+            <a href="#secao-apli" class="link-pasta">
             <div class="folder">
                 <img src="./src/assets/PastaFechada.png" alt="pasta fechada" class="pasta">
                 <img class="aberta" src="./src/assets/PastaAbertaAp.png">
@@ -94,6 +105,7 @@
                 <div class="label">Como a solução pode ser utilizada no dia a dia.</div>
                 </div>
             </div>
+            </a>
         </div>
     </div>
         <button class="arrow next"><img src="./src/assets/setaDireita.png"></button>
@@ -104,7 +116,7 @@
 
 <img src="./src/assets/FaixaLogo.png" width="100%" class="faixaLogo">
 <!-- Seção Problema -->
- <div class="conteudo-secao1">
+ <div id="secao-problema" class="conteudo-secao1">
 
     <div class="texto-secao1">
         <h2>O Problema</h2>
@@ -122,7 +134,7 @@
 
 </div>
 <!-- Seção Tecnologias -->
-<div class="conteudo-secao2">
+<div id="secao-tech" class="conteudo-secao2">
     <img src="./src/assets/imgSecao2.png" class="img-Secao2">
     <div class="texto-secao2">
         <h2>Tecnologias</h2>
@@ -136,7 +148,7 @@
     </div>
 </div>
 <!-- Seção Objetivos -->
- <div class="conteudo-secao3">
+ <div id="secao-ob" class="conteudo-secao3">
     <h2>Objetivos</h2>
     
     <div class="papelSecao3">
@@ -157,7 +169,7 @@
 
 <!-- Seção Público-alvo -->
 
-<div class="conteudo-secao4">
+<div id="secao-pub" class="conteudo-secao4">
     <img src="./src/assets/imgSecao4.png" class="img-Secao4">
     <div class="texto-secao4">
         <h2>Público-alvo</h2>
@@ -174,7 +186,7 @@
 
 <!-- Seção Benefícios -->
 
-<div class="conteudo-secao5">
+<div id="secao-bene" class="conteudo-secao5">
     <h2>Benefícios</h2>
     
     <div class="container-cards-secao5">
@@ -204,7 +216,7 @@
 <!-- Seção Aplicação no Dia a Dia -->
  <div class="conteudo-secao6">
 
-    <div class="texto-secao6">
+    <div id="secao-apli" class="texto-secao6">
         <h2>Aplicação no Dia a Dia</h2>
         <h3>A Solução na sua Rotina</h3>
 
@@ -245,5 +257,7 @@
 
 </footer>
  <script src="./src/js/scriptIndex.js"></script>
+ <a href="#menu" class="botao-subir" title="Voltar ao Menu">
+    &uarr; </a>
 </body>
 </html>
