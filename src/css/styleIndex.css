@@ -470,7 +470,7 @@ header nav a{
 .conteudo-secao5 {
     width: 100%;
     padding: 60px 8%;
-    background-color: var(--color3);
+    background-color: var(--background);
     box-sizing: border-box;
 }
 
@@ -538,4 +538,42 @@ header nav a{
 }
 .cardTexto2-secao5 h3, .cardTexto2-secao5 p {
     color: var(--color3);          
+}
+/* Seção Aplicação no Dia a Dia */
+.conteudo-secao6{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 7%;
+    background-color: var(--background);
+   
+}
+
+.texto-secao6{
+    flex: 1;
+}
+.texto-secao6 h2{
+    font-family: Libre;
+    color: var(--color1);
+    font-size: 60px;
+    -webkit-text-stroke: 1px var(--color1);
+    padding-bottom: 7%;
+}
+.texto-secao6 h3{
+    font-family: Albert;
+    color: var(--color1);
+    font-size: 45px;
+    padding-bottom: 5%;
+    max-width: 400px;
+}
+.texto-secao6 p{
+    font-family: Albert;
+    color: var(--color1);
+    font-size: 25px;
+    padding-bottom: 3%;
+}
+.img-Secao6{
+    width: 500px;
+    flex-shrink: 0;
 }
