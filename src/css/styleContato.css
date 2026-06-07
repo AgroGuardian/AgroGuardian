@@ -213,35 +213,33 @@ header nav a{
 
 #notificacao {
     position: fixed;
-    top: 5%;                  /* Deixa ela lá no topo da tela, bem visível */
-    left: 50%;                /* Joga pro meio horizontal */
-    transform: translateX(-50%); /* Ajuste perfeito para centralizar de verdade */
+    top: 5%;                
+    left: 50%;                
+    transform: translateX(-50%); 
     
-    color: #ffffff;           /* Força o texto a ser SEMPRE branco */
+    color: #ffffff;           
     padding: 15px 30px;
     border-radius: 12px;
     font-family: Albert;
     font-weight: bold;
     font-size: 20px;
-    
-    /* Efeito de esconder/aparecer */
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.4s ease, top 0.4s ease; /* Transição suave */
+    transition: opacity 0.4s ease, top 0.4s ease; 
     z-index: 99999;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* Quando o JS adicionar a classe .mostrar, ela ganha vida */
+
 #notificacao.mostrar {
     opacity: 1;
-    top: 10%;                 /* Dá um efeito lindo dela descendo um pouquinho */
+    top: 10%;                 
 }
 .botoes-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Empurra um para cada canto ou use 'center' se preferir juntos */
-    gap: 16px;                      /* Espaço entre os dois botões */
+    justify-content: space-between; 
+    gap: 16px;                      
     width: 100%;
     margin-top: 15px;
 }

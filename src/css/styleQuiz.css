@@ -129,3 +129,158 @@ header nav a{
     font-size: 14px;
     margin: 0;
 }
+.titulo {
+    padding-top: 10%;
+    text-align: center;  
+    width: 100%;             
+    margin-bottom: 20px;    
+}
+
+.titulo h2 {
+    font-family: Libre;
+    color: var(--color1);   
+    font-size: 45px;        
+    margin-bottom: 10px; 
+}
+
+.titulo p {
+    font-family: Albert;
+    color: var(--color5);
+    -webkit-text-stroke: 0.6px var(--color5);
+    max-width: 750px;
+    margin: 0 auto;     
+    font-size: 25px;
+    line-height: 1.2;
+}
+.quiz-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 20px;
+    position: relative;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding-top: 2%;
+}
+
+.papel-sombra2 {
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 480px;
+    background-color: var(--color3);
+    border: 1.5px solid var(--color1);
+    border-radius: 24px;
+    transform: rotate(2deg); 
+    z-index: 1;
+}
+
+/* Folha do meio */
+.papel-sombra1 {
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 480px;
+    background-color: var(--color3);
+    border: 1.5px solid var(--color1);
+    border-radius: 24px;
+    transform: rotate(-1.5deg); 
+    z-index: 2;
+}
+
+.quiz-card {
+    position: relative;
+    width: 100%;
+    min-height: 480px;
+    background-color: var(--color3);
+    border: 1.5px solid var(--color1);
+    border-radius: 24px;
+    padding: 45px 50px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+.quiz-pergunta {
+    font-family: Albert;    
+    color: var(--color1);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+    line-height: 1.3;
+}
+
+
+.quiz-opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+}
+
+.btn-opcao {
+    width: 100%;
+    background-color: transparent;
+    color: var(--color1);
+    font-family: Albert;
+     -webkit-text-stroke: 0.6px var(--color1);
+    border: 1.5px solid var(--color1);
+    border-radius: 50px; 
+    padding: 14px 30px;
+    font-size: 18px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-opcao:hover {
+    background-color: var(--color1);
+    color: var(--color3);
+    transform: translateX(5px); 
+}
+
+
+.resultado-container {
+    font-family: Albert;
+    text-align: center;
+    color: var(--color1);
+    font-size: 20px;
+     -webkit-text-stroke: 0.8px var(--color5);
+}
+
+.resultado-container h2 {
+    font-family: Albert;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.resultado-score {
+    font-size: 50px;
+    font-family: Albert;
+    font-weight: bold;
+    color: var(--color2);
+    margin: 20px 0;
+}
+
+.btn-reiniciar {
+    background-color: var(--color1);
+    font-family: Albert;
+    color: var(--color3);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+.btn-reiniciar:hover {
+    background-color: var(--color2);
+    font-family: Albert;
+}
